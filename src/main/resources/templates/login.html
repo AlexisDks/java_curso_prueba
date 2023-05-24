@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Logueo</h1>
+    <form th:action="@{/login}" method="post">
+      <label for="username" th:text="Usuario"></label>
+      <input type="text" name="username" id="username" />
+      <label for="password" th:text="Contraseña"></label>
+      <input type="password" name="password" id="password" />
+      <input type="submit" value="Ingresar" />
+    </form>
+  </body>
+</html>
